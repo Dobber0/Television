@@ -1,0 +1,21 @@
+{
+	"modListVersion": 2,
+	"modList": [{
+		"modid": "television",
+		"name": "Television",
+		"description": "An example mod for Minecraft 1.7.10 with Forge focused on a stable setup.",
+		"version": "3fae52a-main+3fae52aab3-dirty",
+		"mcversion": "1.7.10",
+		"url": "https://github.com/SinTh0r4s/MyMod",
+		"updateUrl": "",
+		"authorList": ["SinTho0r4s"],
+		"credits": "",
+		"logoFile": "",
+		"screenshots": [],
+		"parent": "",
+		"requiredMods": [],
+		"dependencies": [],
+		"dependants": [],
+		"useDependencyInformation": false
+	}]
+}

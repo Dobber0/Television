@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package com.dobber0.television;
 
 public class ClientProxy extends CommonProxy {
 
