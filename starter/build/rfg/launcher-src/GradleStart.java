@@ -54,7 +54,7 @@ public class GradleStart extends GradleStartCommon {
     protected void setDefaultArguments(Map<String, String> argMap) {
         argMap.put("version", "1.7.10");
         argMap.put("assetIndex", "1.7.10");
-        argMap.put("assetsDir", "C:\\Users\\pokes\\.gradle\\caches\\retro_futura_gradle\\assets");
+        argMap.put("assetsDir", "C:\\Users\\jorjo\\.gradle\\caches\\retro_futura_gradle\\assets");
         argMap.put("accessToken", "FML");
         argMap.put("userProperties", "{}");
         argMap.put("username", null);

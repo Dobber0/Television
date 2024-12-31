@@ -38,13 +38,13 @@ public abstract class GradleStartCommon {
     private Map<String, String> argMap = Maps.newHashMap();
     private List<String> extras = Lists.newArrayList();
 
-    private static final File SRG_DIR = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs");
-    private static final File SRG_NOTCH_SRG = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\notch-srg.srg");
-    private static final File SRG_NOTCH_MCP = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\notch-mcp.srg");
-    private static final File SRG_SRG_MCP = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\srg-mcp.srg");
-    private static final File SRG_MCP_SRG = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\mcp-srg.srg");
-    private static final File SRG_MCP_NOTCH = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\mcp-notch.srg");
-    private static final File CSV_DIR = new File("C:\\Users\\pokes\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\conf");
+    private static final File SRG_DIR = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs");
+    private static final File SRG_NOTCH_SRG = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\notch-srg.srg");
+    private static final File SRG_NOTCH_MCP = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\notch-mcp.srg");
+    private static final File SRG_SRG_MCP = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\srg-mcp.srg");
+    private static final File SRG_MCP_SRG = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\mcp-srg.srg");
+    private static final File SRG_MCP_NOTCH = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\srgs\\mcp-notch.srg");
+    private static final File CSV_DIR = new File("C:\\Users\\jorjo\\.gradle\\caches\\minecraft\\net\\minecraftforge\\forge\\1.7.10-10.13.4.1614-1.7.10\\unpacked\\conf");
 
     protected abstract void setDefaultArguments(Map<String, String> argMap);
 

@@ -1,0 +1,307 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 12/31/24 12:44 AM
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: net/minecraft/client/renderer/entity/RenderItem
+	at net.minecraft.client.gui.achievement.GuiAchievement.<init>(GuiAchievement.java:34)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:511)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:942)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:40)
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.renderer.entity.RenderItem
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 12 more
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Error transforming method: [net/minecraft/client/renderer/entity/RenderItem.renderGlint(IIIII)V]
+	at codechicken.nei.asm.NEITransformer.transform(NEITransformer.java:431)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 14 more
+Caused by: java.lang.RuntimeException: Error transforming method: [net/minecraft/client/renderer/entity/RenderItem.renderGlint(IIIII)V]
+	at codechicken.lib.asm.ModularASMTransformer$MethodTransformer.transform(ModularASMTransformer.java:100)
+	at codechicken.lib.asm.ModularASMTransformer$ClassNodeTransformerList.transform(ModularASMTransformer.java:45)
+	at codechicken.lib.asm.ModularASMTransformer.transform(ModularASMTransformer.java:290)
+	at codechicken.nei.asm.NEITransformer.transform(NEITransformer.java:429)
+	... 16 more
+Caused by: java.lang.RuntimeException: Needle not found in Haystack:
+   L0
+    LINENUMBER 667 L0
+    ICONST_0
+    ISTORE 6
+   L1
+    GOTO L2
+   L3
+    LINENUMBER 669 L3
+   FRAME FULL [net/minecraft/client/renderer/entity/RenderItem I I I I I I] []
+    SIPUSH 772
+    ICONST_1
+    ICONST_0
+    ICONST_0
+    INVOKESTATIC net/minecraft/client/renderer/OpenGlHelper.glBlendFunc (IIII)V
+   L4
+    LINENUMBER 670 L4
+    LDC 0.00390625
+    FSTORE 7
+   L5
+    LINENUMBER 671 L5
+    LDC 0.00390625
+    FSTORE 8
+   L6
+    LINENUMBER 672 L6
+    INVOKESTATIC net/minecraft/client/Minecraft.getSystemTime ()J
+    SIPUSH 3000
+    ILOAD 6
+    SIPUSH 1873
+    IMUL
+    IADD
+    I2L
+    LREM
+    L2F
+    LDC 3000.0
+    ILOAD 6
+    SIPUSH 1873
+    IMUL
+    I2F
+    FADD
+    FDIV
+    LDC 256.0
+    FMUL
+    FSTORE 9
+   L7
+    LINENUMBER 673 L7
+    FCONST_0
+    FSTORE 10
+   L8
+    LINENUMBER 674 L8
+    GETSTATIC net/minecraft/client/renderer/Tessellator.instance : Lnet/minecraft/client/renderer/Tessellator;
+    ASTORE 11
+   L9
+    LINENUMBER 675 L9
+    LDC 4.0
+    FSTORE 12
+   L10
+    LINENUMBER 677 L10
+    ILOAD 6
+    ICONST_1
+    IF_ICMPNE L11
+   L12
+    LINENUMBER 679 L12
+    LDC -1.0
+    FSTORE 12
+   L11
+    LINENUMBER 682 L11
+   FRAME FULL [net/minecraft/client/renderer/entity/RenderItem I I I I I I F F F F net/minecraft/client/renderer/Tessellator F] []
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.startDrawingQuads ()V
+   L13
+    LINENUMBER 683 L13
+    ALOAD 11
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD net/minecraft/client/renderer/entity/RenderItem.zLevel : F
+    F2D
+    FLOAD 9
+    ILOAD 5
+    I2F
+    FLOAD 12
+    FMUL
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    ILOAD 5
+    I2F
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.addVertexWithUV (DDDDD)V
+   L14
+    LINENUMBER 684 L14
+    ALOAD 11
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ILOAD 5
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD net/minecraft/client/renderer/entity/RenderItem.zLevel : F
+    F2D
+    FLOAD 9
+    ILOAD 4
+    I2F
+    FADD
+    ILOAD 5
+    I2F
+    FLOAD 12
+    FMUL
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    ILOAD 5
+    I2F
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.addVertexWithUV (DDDDD)V
+   L15
+    LINENUMBER 685 L15
+    ALOAD 11
+    ILOAD 2
+    ILOAD 4
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD net/minecraft/client/renderer/entity/RenderItem.zLevel : F
+    F2D
+    FLOAD 9
+    ILOAD 4
+    I2F
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    FCONST_0
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.addVertexWithUV (DDDDD)V
+   L16
+    LINENUMBER 686 L16
+    ALOAD 11
+    ILOAD 2
+    ICONST_0
+    IADD
+    I2D
+    ILOAD 3
+    ICONST_0
+    IADD
+    I2D
+    ALOAD 0
+    GETFIELD net/minecraft/client/renderer/entity/RenderItem.zLevel : F
+    F2D
+    FLOAD 9
+    FCONST_0
+    FADD
+    FLOAD 7
+    FMUL
+    F2D
+    FLOAD 10
+    FCONST_0
+    FADD
+    FLOAD 8
+    FMUL
+    F2D
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.addVertexWithUV (DDDDD)V
+   L17
+    LINENUMBER 687 L17
+    ALOAD 11
+    INVOKEVIRTUAL net/minecraft/client/renderer/Tessellator.draw ()I
+    POP
+   L18
+    LINENUMBER 667 L18
+    IINC 6 1
+   L2
+   FRAME FULL [net/minecraft/client/renderer/entity/RenderItem I I I I I I] []
+    ILOAD 6
+    ICONST_2
+    IF_ICMPLT L3
+   L19
+    LINENUMBER 689 L19
+    RETURN
+   L20
+
+
+    ICONST_2
+    IF_ICMPGE L0
+    SIPUSH 772
+    ICONST_1
+    ICONST_0
+    ICONST_0
+    INVOKESTATIC net/minecraft/client/renderer/OpenGlHelper.glBlendFunc (IIII)V
+
+	at codechicken.lib.asm.InsnComparator.findN(InsnComparator.java:202)
+	at codechicken.lib.asm.InsnComparator.findN(InsnComparator.java:208)
+	at codechicken.lib.asm.ModularASMTransformer$MethodReplacer.transform(ModularASMTransformer.java:243)
+	at codechicken.lib.asm.ModularASMTransformer$MethodTransformer.transform(ModularASMTransformer.java:98)
+	... 19 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.gui.achievement.GuiAchievement.<init>(GuiAchievement.java:34)
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:511)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.run(Minecraft.java:942)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97)
+	at GradleStart.main(GradleStart.java:40)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_431, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 135426448 bytes (129 MB) / 243269632 bytes (232 MB) up to 3797417984 bytes (3621 MB)
+	JVM Flags: 0 total; 
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: 
+	Launched Version: 1.7.10
+	LWJGL: 2.9.4
+	OpenGL: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.03, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: ~~ERROR~~ NullPointerException: null
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

@@ -4,7 +4,7 @@
 		"modid": "television",
 		"name": "Television",
 		"description": "An example mod for Minecraft 1.7.10 with Forge focused on a stable setup.",
-		"version": "3fae52a-main+3fae52aab3-dirty",
+		"version": "82017ff-main+82017ff9f9-dirty",
 		"mcversion": "1.7.10",
 		"url": "https://github.com/SinTh0r4s/MyMod",
 		"updateUrl": "",
